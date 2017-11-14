@@ -1,0 +1,17 @@
+.weather
+{
+
+	background-image: url("weather.jpeg");
+	color: #fff;
+	background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.quote
+{
+	margin-top: 1%;
+	background-color: #f9c2c5;
+	box-shadow: 0 4.375px 17.5px 0 rgba(46,61,73,0.12);
+
+}
