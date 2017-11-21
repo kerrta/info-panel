@@ -2,7 +2,7 @@
 
 $(document).ready( function(){
 	weather();
-	quoteGenerator();
+	
 })
 
 // Weather function
@@ -130,4 +130,18 @@ function generateRon()
 	$('#quote').html(ronQuote);
 	$('#author').html(author);
 
+}
+
+
+function initMap() {
+						 
+    var location = {lat: 28.602784, lng: -81.202022};	//Select a location by coord
+    //change to center on uni latlong
+    var mapDiv = document.getElementById('map');	//Find div for map
+    var map = new google.maps.Map(mapDiv, {			//Create map in map div, pass in properties
+        center: location,
+        zoom: 13
+    });
+    var trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
 }
